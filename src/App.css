@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  background-color: #0D1117; /* Fondo oscuro */
+  color: #C9D1D9; /* Texto claro */
+  font-family: 'Poppins', sans-serif; /* Tipografía elegante */
+  padding: 20px;
 }
 
 .App-logo {
@@ -14,18 +18,94 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #161B22; /* Fondo de encabezado */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #C9D1D9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .App-link {
-  color: #61dafb;
+  color: #58A6FF; /* Azul brillante */
+}
+
+button {
+  background-color: #238636; /* Botón verde */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2EA043; /* Verde más claro al pasar el mouse */
+}
+
+input {
+  background-color: #0D1117; /* Fondo de input */
+  color: #C9D1D9;
+  border: 1px solid #30363D;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 80%;
+}
+
+select {
+  background-color: #0D1117;
+  color: #C9D1D9;
+  border: 1px solid #30363D;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+h1, h2 {
+  color: #58A6FF; /* Azul para títulos */
+}
+
+p {
+  color: #C9D1D9; /* Texto estándar */
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.chart-container {
+  text-align: left; /* Alinea la gráfica a la izquierda */
+  width: 60%; /* Reduce el tamaño de la gráfica */
+  margin: 20px auto; /* Centrado horizontal con espacio */
+  padding: 10px;
+  background-color: #161B22; /* Fondo gráfico */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.chart-container canvas {
+  max-width: 100%; /* Escala el tamaño de la gráfica */
+}
+
+.error-message {
+  color: #F85149; /* Rojo claro para errores */
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 @keyframes App-logo-spin {

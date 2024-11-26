@@ -39,7 +39,7 @@ const App: React.FC = () => {
     curve2: string;
     xMin: number;
     xMax: number;
-  } | null>(null); // Últimos datos válidos para la gráfica
+  } | null>(null); 
 
   const calculateIntegral = () => {
     setError("");
@@ -87,8 +87,8 @@ const App: React.FC = () => {
       setResult(integral.toFixed(4)); // Redondea el resultado
       setIntegralExpression(
         caseType === "case1"
-          ? `∫∫(∂Q/∂x - ∂P/∂y) dxdy, x ∈ [${xMin}, ${xMax}], y ∈ [${curve1}, ${curve2}]`
-          : `∫∫(${fieldQ}) dxdy, x ∈ [${xMin}, ${xMax}], y ∈ [${curve1}, ${curve2}]`
+          ? `∫∫(∂Q/∂x - ∂P/∂y) dydx, x ∈ [${xMin}, ${xMax}], y ∈ [${curve1}, ${curve2}]`
+          : `∫∫(${fieldQ}) dydx, x ∈ [${xMin}, ${xMax}], y ∈ [${curve1}, ${curve2}]`
       );
 
       // Guarda los datos actuales para conservar la gráfica
@@ -136,14 +136,14 @@ const App: React.FC = () => {
         {
           label: "Curva inferior (yMin)",
           data: dataYMin,
-          borderColor: "#9998ff", // Color azul cielo
+          borderColor: "#9998ff", 
           borderWidth: 2,
           pointRadius: 0,
         },
         {
           label: "Curva superior (yMax)",
           data: dataYMax,
-          borderColor: "#18eaf9", // Color verde
+          borderColor: "#18eaf9",
           borderWidth: 2,
           pointRadius: 0,
         },
